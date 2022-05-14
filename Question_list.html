@@ -12,38 +12,33 @@
             top: 0;
         }
         #header{
-            width: 1920px;
+            width: 100vw;
             height: 60px;
             background-color: #000000;
             position: relative;
         }
-        #logo{
-            width: 136px; 
-            height: 33px;
+        #logotext{
+            margin-left: 15.1vw;
             position: absolute;
-            margin-top: 13px;
-            margin-left: 290px;
         }
-        #header>span{
-            color: #ffffff;
-            margin-left: 440px;
-            position: absolute;
-            top: 50%;
-            margin-top: -12px;
-            font-size: 18px;
+        #logo{
+           margin-top: 13px;
         }
         nav{
-           margin-left: 1050px;
+           margin-left: 56.68vw;
         }
         ul{
             list-style: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
         }
         li{
             float: left;
             margin-top: 18px;
         }
         #search1{
-            width: 216px;
+            width: 11.25vw;
             height: 36px;
             border: solid 1px #B7B7B7;
             border-radius: 30px;
@@ -56,28 +51,26 @@
             text-decoration: none;
             color: #ffffff;
             font-size: 18px;
-            margin-right: 111px;
-
+            margin-right: 5.78vw;
         }
         #banner{
-            position: relative;    
+            position: relative; 
+            width: 100vw;   
         }
         #banner>h1{
             font-size: 45px;
             color: #ffffff;
             float: left;
             position: absolute;
-            top:45%;
+            top: 25%;
             left:15.5%;
         }
         #main{
-            width: 1340px;
-            height: 1130px;
-            background-color: #ffffff;
+            width: 69.79vw;
             position: absolute;
             top: 100%;
             left: 50%;
-            margin:-200px 0 0 -670px
+            margin: -62vh 0 0 -35.25vw
         }
         #search2{
             width: 238px;
@@ -94,25 +87,27 @@
     </style>
 </head>
 <body>
-     <!--네비게이션 바-->
+    <!--네비게이션 바-->
      <div id="header">
-        <img src="semoss_logo_white.png" id="logo">
-        <span>세상의 모든 쓰레기 분리수거 정보</span>
-
-        <nav>
-            <ul>
-                <li><a href="">INFO</a></li>
-                <li><a href="">Q&A</a></li>
-                <li><div id="search1"></div></li>
-            </ul>
-        </nav>
-    </div>    
-
-    <!--이미지 배너-->
-    <div id="banner">
-    <img src="banner1.png">
-    <h1>Q&A</h1>
-    </div>
+        <div id="logotext">
+          <img src="semoss_logo_white.png" id="logo" width="136px" height="33px">
+          <!--<p>세상의 모든 쓰레기 분리수거 정보</p>-->
+        </div>  
+  
+          <nav>
+              <ul>
+                  <li><a href="">INFO</a></li>
+                  <li><a href="">Q&A</a></li>
+                  <li><div id="search1"></div></li>
+              </ul>
+          </nav>
+      </div>    
+  
+      <!--이미지 배너-->
+      <div id="banner">
+      <img src="banner2.png" width="100%" height="auto">
+      <h1>Q&A</h1>
+      </div>
 
     <!--본문-->
     <div id="main">
