@@ -12,12 +12,15 @@
         <div class ="header_box">
             <div class ="header_box_left">
                 <img src="/img/semoss_logo_white 1.png">
-                <p>세상의 모든 쓰레기 분리수거 정보_test</p>
-            </div>
+                <p>세상의 모든 쓰레기 분리수거 정보</p>
+            </div >
             <div class ="header_box_right">
                 <p>INFO</p>
                 <p>QNA</p>
-                <img src="/img/header_search.png">
+                <div id ="search_bar">
+                  <input id="search_bar_mini" type="text" placeholder="  검색어 입력">
+                  <button class="search_button"><img src="/img/search_button.png"></button>
+                </div>
             </div>
         </div>
     </header>
@@ -163,9 +166,9 @@
       <!-- Initialize Swiper -->
       <script>
         var swiper = new Swiper(".mySwiper", {
-          slidesPerView: 2.5,
+          slidesPerView: 3,
           centeredSlides: false,
-          spaceBetween: 30,
+          spaceBetween: 50,
           grabCursor: true,
           pagination: {
             el: ".swiper-pagination",
