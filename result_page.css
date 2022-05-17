@@ -63,7 +63,7 @@ header {
 .header_box_right p {
     font-size: 15px;
     color: white;
-    margin:-8px 20px 0px 20px;
+    margin-right: 40px;
 }
 
 #search_bar{
