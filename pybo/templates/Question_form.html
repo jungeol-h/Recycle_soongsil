@@ -17,23 +17,6 @@
     <!--작성 폼-->
     <div>
         <table>
-            <h1>{{ question.subject }}</h1>
-                <div>
-                    {{ question.content }}
-                </div>
-
-                <h5>댓글 {{ question.answer_set|length }}</h5>
-                <div >
-                    <ul>
-                    {% for answer in question.answer_set %}
-                        <div class >{{ answer.content }}</div>
-                    {% endfor %}
-                    </ul>
-                </div>
-                <form action="{{ url_for('answer.create', question_id=question.id) }}" method="post">
-                    <textarea name="content" id="content" rows="15"></textarea>
-                    <input type="submit" value="답변등록" style="width:100%;">
-                </form>
         </table>
     </div>
 </div>

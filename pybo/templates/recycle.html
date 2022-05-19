@@ -1,13 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="stylee.css">
-    <title>Menu bar</title>
-</head>
-<body>
+{% extends 'base.html' %}
+{% block content %}
+<link rel="stylesheet" href="{{ url_for('static', filename='stylee.css') }}">
+
+
+
     <nav class="menu-bar">
         <div class="menu1">
             <a href="">세상의 모든 쓰레기 분리수거 정보</a>
@@ -33,7 +29,7 @@
 
     <nav class="story-title">
         <div class="story-t">
-           <p>글 제목</p>
+            <p>{{ question.subject }}</p>
         </div>
     </nav>
 
@@ -46,16 +42,14 @@
 
     <nav class="story">
         <div class="story-s">
-            <p>(질문 내용 칸)  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            <p>{{ question.content }}</p>
         </div>
     </nav>
 
     <nav class="comment">
         <div class="comment1">
-            <p>댓글1</p>
+            <h5>댓글 {{ question.answer_set|length }}</h5>
         </div>
-
-
 
         <div class="comment-box">
 
@@ -65,21 +59,24 @@
                 <li><p>2022-05-08 5:53</p></li>
                 </ul>
 
-        <div class="c-content">
-            (댓글 내용 칸) 세상의 모든 쓰레기 분리수거 정보 세모쓰 
-        </div>
-
-        <ul class="c-answer">
-            <div class="c-ar">
-            <div class="c-a">
-                <a href="">답글</a>
-            </div>
-            </div>
-        </ul>
+                <div >
+                    <ul>
+                    {% for answer in question.answer_set %}
+                        <div class="c-content">{{ answer.content }}</div>
+                    {% endfor %}
+                    </ul>
+                </div>
     
         </div>
 
-        <div class="c-all">
+        <form action="{{ url_for('answer.create', question_id=question.id) }}" method="post">
+            <textarea name="content" id="content" rows="15"></textarea>
+            <input type="submit" value="답변등록" style="width:100%;">
+
+
+    
+            
+        <!-- <div class="c-all">
         <ul class="c-write">
                 <div class="c-b">
                     <li><img src="댓글.png" width="40px" height="35px" alt=""></li>
@@ -91,14 +88,20 @@
             <ul class="click">
                 <div class="c-click">
                     <div class="c-c">
-                        <a href="">답변</a>
+
+                        </form>
                     </div>
                 </div>
             </ul>
-        </div>
 
+                    <ul class="c-answer">
+            <div class="c-ar">
+            <div class="c-a">
+                <a href="">답글</a>
+            </div>
+            </div>
+        </ul>
+        </div> -->
 
     </nav>
-
-</body>
-</html>
+{% endblock %}
