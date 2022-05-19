@@ -1,84 +1,22 @@
 <!doctype html>
 <html lang="ko">
     <head>
-        <style>
-
-            header {
-    position: fixed;
-    top:0;
-    left:0;
-    right:0;
-    background-color: rgb(56, 56, 56);
-    height:60px;
-    width: 100%;
-    z-index: 100;
-
-}
-
-
-.header_box{
-    width:1330px;
-    margin: auto;
-    margin-top: 0px;
-    display:flex;
-    align-items: center;
-    justify-content: space-between;
-
-}
-
-
-.header_box_left img{
-    width:136px;
-    height: 33px;
-}
-
-.header_box_left {
-    display: flex;
-    color: white;
-    align-items: center;
-}
-
-.header_box_left > p {
-    color: white;
-    font-size: 16px;
-    margin-left: 15px;
-    white-space: nowrap;
-}
-
-
-
-.header_box_right {
-    display: flex;
-    align-items: center;
-}
-
-
-.header_box_right img {
-    width:218px;
-}
-
-.header_box_right p {
-    font-size: 15px;
-    color: white;
-    margin-right: 40px;
-}
-
-        </style>
+        <link rel="stylesheet" href="{{ url_for('static', filename='result_page.css') }}">
     </head>
 <body>
 <!-- 네비게이션바 -->
 <header>
     <div class ="header_box">
         <div class ="header_box_left">
-            <img src="img/semoss_logo_white 1.png">
+            <img src={{url_for('static',filename='img/semoss_logo_white 1.png')}}>
             <p>세상의 모든 쓰레기 분리수거 정보</p>
         </div >
         <div class ="header_box_right">
             <p>INFO</p>
-            <p>QNA</p>
+            <a href="{{url_for('question._list')}}" style="text-decoration: none; color:white;">QNA</a>
             <div id ="search_bar">
               <input id="search_bar_mini" style="outline:none;" type="text" placeholder="  검색어 입력">
-              <button class="search_button"><img src="img/search_button.png"></button>
+              <button class="search_button"><img src={{url_for('static',filename='img/search_button.png')}}></button>
             </div>
         </div>
     </div>

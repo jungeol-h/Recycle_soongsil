@@ -92,3 +92,10 @@ input{
     background-color: #ffffff;
     margin-bottom: 25px;
 }
+
+textarea{
+    width:100%;
+}
+
+form > input {
+}

@@ -1,70 +1,42 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="Question_form.css">
-</head>
+{% extends 'base.html' %}
+{% block content %}
+<link rel="stylesheet" href="{{ url_for('static', filename='Question_form.css') }}">
 
-<body>
-    <!--네비게이션 바-->
-    <div id="header">
-      <div id="logotext">
-        <img src="img/semoss_logo_white.png" id="logo" width="136px" height="33px">
-        <!--<p>세상의 모든 쓰레기 분리수거 정보</p>-->
-      </div>  
-
-        <nav>
-            <ul>
-                <li><a href="">INFO</a></li>
-                <li><a href="">Q&A</a></li>
-                <li><div id="search1"></div></li>
-            </ul>
-        </nav>
-    </div>    
-
-    <!--이미지 배너-->
-    <div id="banner">
-    <img src="img/banner2.png" width="100%" height="auto">
+<!--이미지 배너-->
+<div id="banner">
+    <img src={{url_for('static',filename='img/banner2.png')}} width="100%" height="auto">
     <h1>Q&A</h1>
+</div>
+
+<!--본문-->
+<div id="main">    
+    <!--글제목-->
+    <p class="title">질문게시판</p>
+
+    <hr>
+    <!--작성 폼-->
+    <div>
+        <table>
+            <h1>{{ question.subject }}</h1>
+                <div>
+                    {{ question.content }}
+                </div>
+
+                <h5>댓글 {{ question.answer_set|length }}</h5>
+                <div >
+                    <ul>
+                    {% for answer in question.answer_set %}
+                        <div class >{{ answer.content }}</div>
+                    {% endfor %}
+                    </ul>
+                </div>
+                <form action="{{ url_for('answer.create', question_id=question.id) }}" method="post">
+                    <textarea name="content" id="content" rows="15"></textarea>
+                    <input type="submit" value="답변등록" style="width:100%;">
+                </form>
+        </table>
     </div>
+</div>
 
 
-    <!--본문-->
-    <div id="main">    
-        <!--글제목-->
-        <p class="title">질문게시판</p>
-
-        <hr>
-
-        <!--작성 폼-->
-        <form>
-            <table>
-                <tr>
-                    <td><label for="text">제목</label></td>
-                    <td><input for="text" type ="text" name="id"></td>
-                </tr>
-                <tr>
-                    <td><label for="text">분류</label></td>
-                    <td><input for="text" type ="text" name="id"></td>
-                </tr>
-                <tr>
-                    <td><label for="text">비밀번호</label></td>
-                    <td><input for="text" type ="text" name="id"></td>
-                </tr>
-                <tr>
-                    <td><label for="text" style="float: top;">질문내용</label></td>
-                    <td><input for="text" type ="text" name="id" style="height: 460px"></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td><input type="submit" value="제출" style="width: 90px; height: 47px; background-color: #039145;
-                        font-size: 20px; color: #ffffff; float: right;"></td>
-                </tr>
-            </table>
-        </form>
-    </div>
-</body>
-</html>
+{% endblock %}
