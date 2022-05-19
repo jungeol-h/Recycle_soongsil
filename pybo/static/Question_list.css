@@ -27,6 +27,7 @@ ul{
 li{
     float: left;
     margin-top: 18px;
+    background-color: black;
 }
 #search1{
     width: 11.25vw;
