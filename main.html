@@ -21,7 +21,6 @@
                 float: left;
             }
             #nav{
-
                 list-style: none;
                 height: 40px;
                 margin: 0;
@@ -59,22 +58,24 @@
                text-decoration: none;
                line-height: 350px;
            }
-           #main h5{
+           #main p{
             font-family: "Inter";
                font-size: 18px;
                font-weight: medium;
                margin: 0;
                color:white;
                text-decoration: none;
-               line-height: 100px;
+               line-height: 50px;
            }
            .search{
-               position: relative;
-               width: 300px;
+               position: absolute; top: 300px; right: 750px;
+               width: 400px;
+               height: 100px;
+               margin: 0px auto;
             }
             .search input{
                 width: 400px;
-                border: 1px solid black;
+                border: 1px solid gray;
                 border-radius: 60px;
                 padding: 10px 12px;
                 font-size: 10px;
@@ -121,14 +122,9 @@
                 text-align: center;
             }
             #cover{
-                background-image: url('/img/메인_하단.jpg');l
-                background-size: 100% 100%
-                background-position: center;
-                background-repeat: no-repeat;
-                background-attachment: fixed;
-            }
-            #search{
-                display: inline-block;
+                background-image: url('/img/메인_하단.jpg');
+                background-size: 100% 110%;
+                text-align: center;
             }
             #footer{
                 background-color: black;
@@ -153,14 +149,10 @@
             <section id="main">
                 <!--검색창-->
                 <h2 class="center">무엇을 분리수거하나요?</h2>
-                <h5 class="center">옷걸이 후라이팬 형광등 인공눈물</h5>
+                <p class="center">옷걸이 후라이팬 형광등 인공눈물</p>
                 <div class="search">
-                    <input type="text" placeholder="쓰레기 검색">
-                </div>
-                <div class="button">
-                    <button>
-                        <img src="/img/search_button.png">
-                    </button>
+                    <input style="outline: none;" type="text" placeholder="쓰레기 검색">
+                    <button class="button"><img src="/img/search_button.png"></button>
                 </div>
                 <div id="item">
                     <!--많이 찾은 분리수거 항목-->
@@ -185,8 +177,14 @@
                 </div>
 
                 <!--사진-->
-                <div id="cover">
+                <div id="cover" style="vertical-align: top;">
                     <h2>세상을 바꾸는 분리수거,</h2>
+                    <div style="display:inline-block;">
+                        <img class = "center" src="/img/semoss_logo_white 1.png" width="200" height="50">
+                    </div>
+                    <div style="display:inline-block;">
+                        <p>와 함께하세요!</p>
+                    </div>
                 </div>
 
                 <!--하단바-->
