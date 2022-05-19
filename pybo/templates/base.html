@@ -1,29 +1,11 @@
 <!doctype html>
 <html lang="ko">
     <head>
-        <link rel="stylesheet" href="{{ url_for('static', filename='result_page.css') }}">
+        <!--navigation css-->
+        <link rel="stylesheet" href="{{ url_for('static', filename='navigation.css') }}">
     </head>
 <body>
 <!-- 네비게이션바 -->
 <header>
     <div class ="header_box">
         <div class ="header_box_left">
-            <img src={{url_for('static',filename='img/semoss_logo_white 1.png')}}>
-            <p>세상의 모든 쓰레기 분리수거 정보</p>
-        </div >
-        <div class ="header_box_right">
-            <p>INFO</p>
-            <a href="{{url_for('question._list')}}" style="text-decoration: none; color:white;">QNA</a>
-            <div id ="search_bar">
-              <input id="search_bar_mini" style="outline:none;" type="text" placeholder="  검색어 입력">
-              <button class="search_button"><img src={{url_for('static',filename='img/search_button.png')}}></button>
-            </div>
-        </div>
-    </div>
-</header>
-<!-- 기본 템플릿 안에 삽입될 내용 Start -->
-{% block content %}
-{% endblock %}
-<!-- 기본 템플릿 안에 삽입될 내용 End -->
-</body>
-</html>
