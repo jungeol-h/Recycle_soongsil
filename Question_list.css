@@ -1,0 +1,77 @@
+body{
+    margin : 0;
+    top: 0;
+}
+#header{
+    width: 100vw;
+    height: 60px;
+    background-color: #000000;
+    position: relative;
+}
+#logotext{
+    margin-left: 15.1vw;
+    position: absolute;
+}
+#logo{
+   margin-top: 13px;
+}
+nav{
+   margin-left: 56.68vw;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+li{
+    float: left;
+    margin-top: 18px;
+}
+#search1{
+    width: 11.25vw;
+    height: 36px;
+    border: solid 1px #B7B7B7;
+    border-radius: 30px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    margin-top: -18px;
+}
+a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    margin-right: 5.78vw;
+}
+#banner{
+    position: relative; 
+    width: 100vw;   
+}
+#banner>h1{
+    font-size: 45px;
+    color: #ffffff;
+    float: left;
+    position: absolute;
+    top: 25%;
+    left:15.5%;
+}
+#main{
+    width: 69.79vw;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin: -62vh 0 0 -35.25vw
+}
+#search2{
+    width: 238px;
+    height: 45px;
+    border: solid 1px #B7B7B7;
+    border-radius: 30px;
+    background-color: white;
+    float: right;
+}
+table{
+    text-align: center;
+    font-size: 23px;
+}
