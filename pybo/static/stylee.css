@@ -38,12 +38,12 @@ a {
 
 }
 
-input {
-    border: 0;
-    width: 100%;
-    border-radius: 20px;
-    padding: 5px 5px;
+.main{
+    width: 69.635vw;
+    margin: 0 auto;
+    margin-bottom: 150px;
 }
+
 
 .button {
     float: right;
@@ -71,7 +71,7 @@ input {
 .story-t {
     font-size: 26px;
     padding-top: 100px;
-    padding-left: 300px;
+
 }
 
 .tell {
@@ -79,8 +79,6 @@ input {
     justify-content: space-between;
     align-items: center;
     background-color: #F4F4F4;
-    margin: 5px 250px 0 250px;
-
     border-top: 2px solid black;
     border-bottom: 2px solid black;
 
@@ -102,7 +100,6 @@ ul {
 }
 
 .story {
-    margin: 5px 250px 0 250px;
     padding: 10px 50px;
 }
 
@@ -112,7 +109,6 @@ ul {
 
 .comment {
     background-color: #F4F4F4;
-    margin: 5px 250px 0 250px;
     display: block;
     justify-content: space-between;
     align-items: center;
@@ -128,12 +124,23 @@ ul {
 .comment-box {
     border-top: 1px solid black;
     border-bottom: 1px solid black;
-    
+}
+
+hr{
+    width: 67.188vw;
+    margin: 0 auto;
+    background-color: #6B6B6B;
+}
+
+ul hr{
+     width: 63vw;
+     float: left;
+     background-color: #F5F5F5;
 }
 
 .c-people {
     font-size: 16px;
-    display: flex;
+
 }
 
 
@@ -143,7 +150,7 @@ ul {
 
 .c-content {
     font-size: 15px;
-    padding: 10px 40px;
+
     padding-bottom: 30px;
 }
 
@@ -174,11 +181,20 @@ ul {
     width: 62.5vw;
     height: 100px;
     background-color: white;
-    display: flex;
+    border: none;
 }
-.c-b li {
-    padding: 10px 10px;
+
+.c-write{
+    width: 65vw;
+    margin: 0 auto;
+    margin-top: 25px;
+    padding-bottom: 60px;
 }
+
+span{
+    display: inline-block;
+}
+
 
 .click {
     float: right;
@@ -189,9 +205,10 @@ ul {
     background-color: #039145;
     width: 60px;
     height: 30px;
+    color: #ffffff;
+    border: none;
+    float: right;
+    margin-top: 10px;
 }
 
-.c-c {
-    padding: 0 13px;
-}
 

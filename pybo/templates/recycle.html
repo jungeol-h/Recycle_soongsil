@@ -27,6 +27,8 @@
         </div>
     </nav>
 
+
+    <div class="main">
     <nav class="story-title">
         <div class="story-t">
             <p>{{ question.subject }}</p>
@@ -51,28 +53,36 @@
             <h5>댓글 {{ question.answer_set|length }}</h5>
         </div>
 
-        <div class="comment-box">
+        <hr>
 
-            <ul class="c-people">
-                <li><img src="profile.png" alt=""></li>
-                <li><p>댓글인</p></li>
-                <li><p>2022-05-08 5:53</p></li>
-                </ul>
-
-                <div >
+            <div class="c-people">
+            </div>
+                <div>
                     <ul>
                     {% for answer in question.answer_set %}
-                        <div class="c-content">{{ answer.content }}</div>
+                        <span><img src= "{{url_for('static',filename='img/profile.png')}}" width="35px" height="35px" alt=""></span>
+                        <span class="comment-text" style="padding-bottom: 10px;">댓글인</span>
+                        <span class="comment-text">2022-05-08 5:53</span>
+                        <div class="c-content" >
+                            {{ answer.content }}
+                            <div style="margin-bottom: 35px;"></div>
+                            <hr></div>
                     {% endfor %}
                     </ul>
                 </div>
-    
-        </div>
 
+
+        <div class="c-write">
         <form action="{{ url_for('answer.create', question_id=question.id) }}" method="post">
-            <textarea name="content" id="content" rows="15"></textarea>
-            <input type="submit" value="답변등록" style="width:100%;">
+            <span><img src= "{{url_for('static',filename='img/댓글.png')}}" width="40px" height="35px" alt=""></span>
+            <span class="comment-text">댓글 달기</span>
+            <textarea name="content" id="content" rows="15" class="c-b">
+            </textarea>
 
+            <input type="submit" value="답글" class="c-click">
+        </form>
+        </div>
+        </div>
 
     
             
