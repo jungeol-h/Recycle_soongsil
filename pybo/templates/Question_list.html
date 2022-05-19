@@ -1,12 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends 'base.html' %}
+{% block content %}
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="Question_list.css">
+    <link rel="stylesheet" href="static/Question_list.css">
 </head>
 <body>
     <!--네비게이션 바-->
@@ -47,51 +48,15 @@
 
     <!--질문 리스트-->
     <table class="table table-hover">
-        <thead>
-        <tr>
-            <th>번호</th>
-            <th>제목</th>
-            <th>작성일</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-            <td>1</td>
-            <td>코드 짜기 귀찮아요</td>
-            <td>2022-05-07</td>
-        </tr>
-        <tr>
-            <td>2</td>
-            <td>종강 언제 하나요???</td>
-            <td>2022-05-07</td>
-        </tr>
-        <tr>
-            <td>2</td>
-            <td>종강 언제 하나요???</td>
-            <td>2022-05-07</td>
-        </tr>
-        <tr>
-            <td>2</td>
-            <td>종강 언제 하나요???</td>
-            <td>2022-05-07</td>
-        </tr>
-        <tr>
-            <td>2</td>
-            <td>종강 언제 하나요???</td>
-            <td>2022-05-07</td>
-        </tr>
-        <tr>
-            <td>2</td>
-            <td>종강 언제 하나요???</td>
-            <td>2022-05-07</td>
-        </tr>
-        <tr>
-            <td>2</td>
-            <td>종강 언제 하나요???</td>
-            <td>2022-05-07</td>
-        </tr>
-        </tbody>
-        <tr>
+{% if question_list %}
+    <ul>
+    {% for question in question_list %}
+        <li><a href="/detail/{{ question.id }}/">{{ question.subject }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>질문이 없습니다.</p>
+{% endif %}
             <td></td>
             <td></td>
             <td><input type="submit" value="글쓰기" style="width: 90px; height: 47px; background-color: #039145;
@@ -101,4 +66,4 @@
     
     </div>
 </body>
-</html>
+{% endblock %}

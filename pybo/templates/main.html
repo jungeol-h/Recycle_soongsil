@@ -1,8 +1,7 @@
-<!DOCTYPE html>
-<html>
+{% extends 'base.html' %}
+{% block content %}
     <head>
         <!--제목-->
-        <title>Semoss_test</title>
         <style>  
             *{
                 margin: 0;
@@ -134,17 +133,6 @@
         </style>
     </head>
     <body>
-        <header>
-            <div class="semoss">
-                <h3>세상의 모든 쓰레기 분리수거 정보</h3>
-            <nav>    
-                <ul id="nav">
-                    <li><a href="">INFO</a></li>
-                    <li><a href="">Q&A</a></li>
-                    <li><a href="">LOGIN</a></li>
-                </ul>
-            </nav>
-        </header>
         <div>
             <section id="main">
                 <!--검색창-->
@@ -194,6 +182,4 @@
             </section>
             <asid></asid>
         </div>
-        <footer></footer>
-    </body>
-</html>
+{% endblock %}
