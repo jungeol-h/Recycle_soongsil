@@ -9,3 +9,26 @@
 <header>
     <div class ="header_box">
         <div class ="header_box_left">
+            <img src={{url_for('static',filename='img/semoss_logo_white.png')}}>
+        </div >
+        <div class ="header_box_right">
+          <ul>
+              <li><p>INFO</p></li>
+              <li><a href ="{{url_for('question._list')}}">QNA</a ></li>
+           <li> <div id ="search_bar">
+              <input id="search_bar_mini" style="outline:none;" type="text" placeholder="  검색어 입력">
+              <button class="search_button"> <img src={{url_for('static',filename='img/search_button.png')}}></button>
+            </div>
+           </li>
+          </ul>
+        </div>
+    </div>
+</header>
+
+
+<!-- 기본 템플릿 안에 삽입될 내용 Start -->
+{% block content %}
+{% endblock %}
+<!-- 기본 템플릿 안에 삽입될 내용 End -->
+</body>
+</html>
