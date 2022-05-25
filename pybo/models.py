@@ -12,3 +12,10 @@ class Answer(db.Model):
     question = db.relationship('Question', backref=db.backref('answer_set'))
     content = db.Column(db.Text(), nullable=False)
     create_date = db.Column(db.DateTime(), nullable=False)
+
+
+class RecycleItem(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    item_name = db.Column(db.Text(), nullable=False)
+    item_sentence = db.Column(db.Text(), nullable=False)
+    item_image = db.Column(db.String(100), default='default.png')
