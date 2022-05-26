@@ -13,5 +13,10 @@ def index():
 @bp.route('/load/', methods=('POST',))
 def load():
     item = request.form['item']
-    return redirect(url_for('result.detail'))
+    if (item =='우산'):
+        return render_template('result_page_umbrella.html')
+    elif (item =='플라스틱'):
+        return render_template('result_page_plastic.html')
+    else:
+         return redirect(url_for('main.index'))
 
