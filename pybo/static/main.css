@@ -169,10 +169,23 @@ body{
             #cover_text{
                 display:inline-block;
                 color: white;
+                margin-top: 100px;
+                font-weight: bold;
+                position: absolute;
+                left: 39vw; top: 78vw;
+            }
+            #cover_logo img{
+                position: absolute;
+                left: 38vw; top: 87vw;
             }
             #cover_text2{
                 display:inline-block;
                 color: white;
+                font-size: 100vw;
+                font-weight: bold;
+                margin-top: 20px;
+                position: absolute;
+                left: 49.5vw; top: 86vw;
             } 
             footer{
                 background-color: white;
