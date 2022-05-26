@@ -5,12 +5,13 @@
 <div id = main_box>
                 <!--검색창-->
                 <h2 class="center">무엇을 분리수거하나요?</h2>
-                <p class="center">옷걸이 후라이팬 형광등 인공눈물</p>
-
-                <form action="{{ url_for('main.load') }}" method="post">
-                    <input type="text" placeholder="쓰레기검색" name="item" id="item"></input>
-                    <button class="button"><img src="static/img/search_button.png"></button>
-                </form>
+                <p class="center" style="color: white">옷걸이 후라이팬 형광등 인공눈물</p>
+                <div id = "search">
+                    <form action="{{ url_for('main.load') }}" method="post">
+                        <input type="text" placeholder="쓰레기검색" name="item" id="item"></input>
+                        <button class="button"><img src="static/img/search_button.png"></button>
+                    </form>
+                </div>
                 <!-- <div class="search">
                     <input style="outline: none;" type="text" placeholder="쓰레기 검색">
                     <button class="button"><img src="/img/search_button.png"></button>
@@ -18,35 +19,49 @@
 
                 <div id="item">
                     <!--많이 찾은 분리수거 항목-->
-                    <h3 class="center">많이 찾은 분리수거 항목</h3>
-                    <img class="center" src ="static/img/gray.jpg" alt = "분리수거사진" width = "206" height="206">
-                    <img class="center" src ="static/img/gray.jpg" alt = "분리수거사진" width = "206" height="206">
-                    <img class="center" src ="static/img/gray.jpg" alt = "분리수거사진" width = "206" height="206">
-                    <img class="center" src ="static/img/gray.jpg" alt = "분리수거사진" width = "206" height="206">
-                    <img class="center" src ="static/img/gray.jpg" alt = "분리수거사진" width = "206" height="206">
-                    <img class="center" src ="static/img/gray.jpg" alt = "분리수거사진" width = "206" height="206">
+                    <p>많이 찾은 분리수거 항목</p>
+                    <div class="cantainer">
+                        <div class="item_img">
+                            <img src ="static/img/gray.jpg" alt = "분리수거사진" width = "206" height="206">
+                            <img src ="static/img/gray.jpg" alt = "분리수거사진" width = "206" height="206">
+                            <img src ="static/img/gray.jpg" alt = "분리수거사진" width = "206" height="206">
+                            <img src ="static/img/gray.jpg" alt = "분리수거사진" width = "206" height="206">
+                            <img src ="static/img/gray.jpg" alt = "분리수거사진" width = "206" height="206">
+                            <img src ="static/img/gray.jpg" alt = "분리수거사진" width = "206" height="206">
+                        </div>
+                    </div>
                 </div>
 
                <!--자주 묻는 질문-->
                <div id="question">
-                    <h3 class="center">자주 묻는 질문</h3>
-                    <img class="center" src ="static/img/white.jpg" alt = "질문목록" width = "206" height="206">
-                    <img class="center" src ="static/img/white.jpg" alt = "질문목록" width = "206" height="206">
-                    <img class="center" src ="static/img/white.jpg" alt = "질문목록" width = "206" height="206">
-                    <img class="center" src ="static/img/white.jpg" alt = "질문목록" width = "206" height="206">
-                    <img class="center" src ="static/img/white.jpg" alt = "질문목록" width = "206" height="206">
-                    <img class="center" src ="static/img/white.jpg" alt = "질문목록" width = "206" height="206">
+                    <p>자주 묻는 질문</p>
+                    <div class="container">
+                        <div class="question_img">
+                            <img src ="static/img/white.jpg" alt = "질문목록" width = "206" height="206">
+                            <img src ="static/img/white.jpg" alt = "질문목록" width = "206" height="206">
+                            <img src ="static/img/white.jpg" alt = "질문목록" width = "206" height="206">
+                            <img src ="static/img/white.jpg" alt = "질문목록" width = "206" height="206">
+                            <img src ="static/img/white.jpg" alt = "질문목록" width = "206" height="206">
+                            <img src ="static/img/white.jpg" alt = "질문목록" width = "206" height="206">
+                        </div>
+                    </div>
                 </div>
 
                 <!--사진-->
-                <div id="cover" style="vertical-align: top;">
-                    <h2>세상을 바꾸는 분리수거,</h2>
-                    <div style="display:inline-block;">
+                <div id="cover">
+                    <div id="cover_text">
+                        <h2>세상을 바꾸는 분리수거,</h2>
+                    </div>
+                    <div id = "cover_logo">
                         <img class = "center" src="static/img/semoss_logo_white 1.png" width="200" height="50">
                     </div>
-                    <div style="display:inline-block;">
+                    <div id="cover_text2">
                         <p>와 함께하세요!</p>
                     </div>
                 </div>
+                <footer>
+                    <p>2022 Copyright © Team SEMOSS All Right Reserved.</p>
+                </footer>
+                
 </div>
 {% endblock %}
