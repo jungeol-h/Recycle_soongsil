@@ -6,23 +6,21 @@ body{
 }
 #main_box{
     width: 100%;
-    height: 570px;
+    height: 29.6875vw;
     top: 0px;
     background: #039145;
 }
-            h3{
+            /* h3{
                 color: white;
                 line-height: 40px;
                 float: left;
-            }
-            /* #nav{
                 list-style: none;
                 height: 40px;
                 margin: 0;
                 color: white;
                 background: #039145;
                 float: right;
-           } */
+           }  */
 
            #main_box h2{
                 font-family: "Inter";
@@ -31,28 +29,26 @@ body{
                margin: 0;
                color:white;
                text-decoration: none;
-               line-height: 350px;
+               line-height: 20vw;
            }
-           #main p{
+           #main_box p{
              font-family: "Inter";
                font-size: 18px;
                font-weight: medium;
-               margin: 0;
+               margin-top: 0;
                color:white;
                text-decoration: none;
-               line-height: 50px;
            }
-           #search{
-                width: 530px;
+           #search{            
                 display:flex;
            }
            #search input{
                 position: absolute;
-                top: 30%;
-                left: 50%;
+                top: 15vw;
+                left: 50vw;
                 transform: translate(-50%, -50%);
-                width: 616px;
-                height: 46px;
+                width: 32vw;
+                height: 2.3vw;
                 background: #FFFFFF;
                 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
                 border-radius: 40px;
@@ -61,8 +57,8 @@ body{
            }
            #search button{
                 position:absolute;
-                right:780px;
-                top:305px;
+                right: 36vw;
+                top:14vw;
                 border: none;
                 cursor: pointer;
                 width: 0px;
@@ -130,7 +126,7 @@ body{
                 margin: 0px 3px;
                 padding: 5px;
                 position: absolute;
-                left: 50%; top: 50%;
+                left: 50vw; top: 25vw;
                 margin-left: -650px;
                 margin-top: 155px;
             }
@@ -156,7 +152,7 @@ body{
                 margin: 0px 3px;
                 padding: 5px;
                 position: absolute;
-                left: 50%; top: 50%;
+                left: 50vw; top: 25vw;
                 margin-left: -650px;
                 margin-top: 655px;
             }            
@@ -165,7 +161,7 @@ body{
                 text-align: center;
             }
             #cover{
-                background-image: url('img/메인_하단_.jpg');
+                background-image: url('img/메인_하단1.jpg');
                 width: cover;
                 height: 450px;
                 text-align: center;
