@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--제목-->
+        <title>Semoss_test</title>
+        <style>  
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            header{
+                list-style: none;
+                height: 40px;
+                margin: 0;
+                color: white;
+                background: #039145;
+            }
+            h3{
+                color: white;
+                line-height: 40px;
+                float: left;
+            }
+            #nav{
+                list-style: none;
+                height: 40px;
+                margin: 0;
+                color: white;
+                background: #039145;
+                float: right;
+           }
+           #nav li{
+               float: left;
+               position:relative;
+               margin: 5px 30px;
+               padding: 0;
+           }
+           #nav li a{
+               display:block;
+               font-family: "Inter";
+               font-size: 18px;
+               margin: 0;
+               color:white;
+               text-decoration: none;
+               line-height: 40px;
+           }
+           #main{
+               height: 500px;
+               margin: 0;
+               color: white;
+               background: #039145;
+           }
+           #main h2{
+                font-family: "Inter";
+               font-size: 38px;
+               font-weight: bold;
+               margin: 0;
+               color:white;
+               text-decoration: none;
+               line-height: 350px;
+           }
+           #main p{
+            font-family: "Inter";
+               font-size: 18px;
+               font-weight: medium;
+               margin: 0;
+               color:white;
+               text-decoration: none;
+               line-height: 50px;
+           }
+           .search{
+               position: absolute; top: 300px; right: 750px;
+               width: 400px;
+               height: 100px;
+               margin: 0px auto;
+            }
+            .search input{
+                width: 400px;
+                border: 1px solid gray;
+                border-radius: 60px;
+                padding: 10px 12px;
+                font-size: 15px;
+            }
+            .search img{
+                position: absolute;
+                width: 20px;
+                top: 10px;
+                right: 0px;
+                margin: 0px;
+                border: 0;
+            }
+            #item{
+                height: 500px;
+                margin: 0;
+                color: white;
+                background: white;
+            }
+            #item h3{
+                font-family: "Inter";
+               font-size: 18px;
+               font-weight: bold;
+               margin: 0;
+               color:black;
+               text-decoration: none;
+               line-height: 350px;
+            }
+            #question{
+                height: 500px;
+                margin: 0;
+                color: white;
+                background: #F4F4F4;
+            }
+            #question h3{
+                font-family: "Inter";
+               font-size: 18px;
+               font-weight: bold;
+               margin: 0;
+               color:black;
+               text-decoration: none;
+               line-height: 350px;
+            }
+            .center{
+                vertical-align: middle;
+                text-align: center;
+            }
+            #cover{
+                background-image: url('/img/메인_하단.jpg');
+                background-size: 100% 110%;
+                text-align: center;
+            }
+            #footer{
+                background-color: black;
+                text-align: center;
+                font-size: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="semoss">
+                <h3>세상의 모든 쓰레기 분리수거 정보</h3>
+            <nav>    
+                <ul id="nav">
+                    <li><a href="">INFO</a></li>
+                    <li><a href="">Q&A</a></li>
+                    <li><a href="">LOGIN</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div>
+            <section id="main">
+                <!--검색창-->
+                <h2 class="center">무엇을 분리수거하나요?</h2>
+                <p class="center">옷걸이 후라이팬 형광등 인공눈물</p>
+                <div class="search">
+                    <input style="outline: none;" type="text" placeholder="쓰레기 검색">
+                    <button class="button">
+                        <img src="/img/search_button.png"></button>
+                </div>
+                <div id="item">
+                    <!--많이 찾은 분리수거 항목-->
+                    <h3 class="center">많이 찾은 분리수거 항목</h3>
+                    <img class="center" src ="/img/gray.jpg" alt = "분리수거사진" width = "206" height="206">
+                    <img class="center" src ="/img/gray.jpg" alt = "분리수거사진" width = "206" height="206">
+                    <img class="center" src ="/img/gray.jpg" alt = "분리수거사진" width = "206" height="206">
+                    <img class="center" src ="/img/gray.jpg" alt = "분리수거사진" width = "206" height="206">
+                    <img class="center" src ="/img/gray.jpg" alt = "분리수거사진" width = "206" height="206">
+                    <img class="center" src ="/img/gray.jpg" alt = "분리수거사진" width = "206" height="206">
+                </div>
+
+               <!--자주 묻는 질문-->
+               <div id="question">
+                    <h3 class="center">자주 묻는 질문</h3>
+                    <img class="center" src ="/img/white.jpg" alt = "질문목록" width = "206" height="206">
+                    <img class="center" src ="/img/white.jpg" alt = "질문목록" width = "206" height="206">
+                    <img class="center" src ="/img/white.jpg" alt = "질문목록" width = "206" height="206">
+                    <img class="center" src ="/img/white.jpg" alt = "질문목록" width = "206" height="206">
+                    <img class="center" src ="/img/white.jpg" alt = "질문목록" width = "206" height="206">
+                    <img class="center" src ="/img/white.jpg" alt = "질문목록" width = "206" height="206">
+                </div>
+
+                <!--사진-->
+                <div id="cover" style="vertical-align: top;">
+                    <h2>세상을 바꾸는 분리수거,</h2>
+                    <div style="display:inline-block;">
+                        <img class = "center" src="/img/semoss_logo_white 1.png" width="200" height="50">
+                    </div>
+                    <div style="display:inline-block;">
+                        <p>와 함께하세요!</p>
+                    </div>
+                </div>
+
+                <!--하단바-->
+                <div id="footer">
+                    <p>2022 Copyright © Team SEMOSS All Right Reserved.</p>
+                </div>
+            </section>
+            <asid></asid>
+        </div>
+        <footer></footer>
+    </body>
+</html>
