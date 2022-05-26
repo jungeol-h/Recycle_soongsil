@@ -29,7 +29,7 @@ body{
                margin: 0;
                color:white;
                text-decoration: none;
-               line-height: 20vw;
+               line-height: 19vw;
            }
            #main_box p{
              font-family: "Inter";
@@ -93,19 +93,18 @@ body{
                 margin: 0px;
             } */
             #item{
-                height: 500px;
-                margin: 0;
+                height: 400px;
+                margin-top: 10px;
                 background: white;
             }
             #item p{
-                font-family: "Inter";
-               font-size: 18px;
                font-weight: bold;
                margin: 0;
                color:black;
                text-decoration: none;
                text-align: center;
-               line-height: 350px;
+               line-height: 140px;
+               position: relative;
             }
 
             /* #item img{
@@ -126,13 +125,13 @@ body{
                 margin: 0px 3px;
                 padding: 5px;
                 position: absolute;
-                left: 50vw; top: 25vw;
+                left: 50vw; top: 20vw;
                 margin-left: -650px;
                 margin-top: 155px;
             }
 
             #question{
-                height: 500px;
+                height: 400px;
                 margin: 0;
                 color: white;
                 background: #F4F4F4;
@@ -145,14 +144,14 @@ body{
                color:black;
                text-decoration: none;
                text-align: center;
-               line-height: 350px;
+               line-height: 140px;
             }
             div.question_img{
                 float: left;
                 margin: 0px 3px;
                 padding: 5px;
                 position: absolute;
-                left: 50vw; top: 25vw;
+                left: 50vw; top: 15vw;
                 margin-left: -650px;
                 margin-top: 655px;
             }            
@@ -172,11 +171,11 @@ body{
                 margin-top: 100px;
                 font-weight: bold;
                 position: absolute;
-                left: 39vw; top: 78vw;
+                left: 39vw; top: 67vw;
             }
             #cover_logo img{
                 position: absolute;
-                left: 38vw; top: 87vw;
+                left: 38vw; top: 76vw;
             }
             #cover_text2{
                 display:inline-block;
@@ -185,7 +184,7 @@ body{
                 font-weight: bold;
                 margin-top: 20px;
                 position: absolute;
-                left: 49.5vw; top: 86vw;
+                left: 49.5vw; top: 74.9vw;
             } 
             footer{
                 background-color: white;
