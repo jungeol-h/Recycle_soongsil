@@ -23,64 +23,15 @@
                     <br>
                     <div class="swiper mySwiper">
                         <div class="swiper-wrapper">
-                          <div class="swiper-slide" style="width:327px;">
-                            <div class="image">
-                                <img src="/img/parasol.png" alt="">
+                            {% for i in range(6) %}
+                            <div class="swiper-slide" style="width:327px;">
+
+                              <div class="image">
+                                  <img src={{url_for('static', filename=freqitem[i].item_image)}} alt="">
+                              </div>
+                              <p>{{freqitem[i].item_name}}</p>
                             </div>
-                            <div class="similar_back">
-                                <p class="simliar_back-text">파라솔</p>
-                            </div>
-                          </div>
-                          <div class="swiper-slide">
-                            <div class="image">
-                                <img src="/img/ruler.png" alt="">
-                            </div>
-                            <div class="similar_back">
-                                <p class="simliar_back-text">자</p>
-                            </div>
-                          </div>
-                          <div class="swiper-slide">
-                            <div class="image">
-                                <img src="/img/umbrella.png" alt="">
-                            </div>
-                            <div class="similar_back">
-                                <p class="simliar_back-text">test</p>
-                            </div>
-                          </div>
-                          <div class="swiper-slide">
-                            <div class="image">
-                                <img src="/img/umbrella.png" alt="">
-                            </div>
-                            <div class="similar_back">
-                                <p class="simliar_back-text">test</p>
-                            </div>
-                          </div>
-                          <div class="swiper-slide">
-                            <div class="image">
-                                <img src="/img/umbrella.png" alt="">
-                            </div>
-                            <div class="similar_back">
-                                <p class="simliar_back-text">test</p>
-                            </div>
-                          </div>
-                          <div class="swiper-slide">
-                            <div class="image">
-                                <img src="/img/umbrella.png" alt="">
-                            </div>
-                            <div class="similar_back">
-                                <p class="simliar_back-text">test</p>
-                            </div>
-                          </div>
-                          <div class="swiper-slide">
-                            <div class="image">
-                                <img src="/img/umbrella.png" alt="">
-                                <div class="similar_back">
-                                    <p class="simliar_back-text">test</p>
-                                </div>
-                            </div>
-                          </div>
-                          <div class="swiper-slide">Slide 8</div>
-                          <div class="swiper-slide">Slide 9</div>
+                          {% endfor %}
                         </div>
                         <div class="swiper-pagination"></div>
                     </div>

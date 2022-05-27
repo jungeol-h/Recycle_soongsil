@@ -20,4 +20,6 @@ class RecycleItem(db.Model):
     item_sentence = db.Column(db.Text(), nullable=False)
     item_image = db.Column(db.String(100), default='img/item/우산/0.png')
     size = db.Column(db.Integer, nullable=True, server_default='1')
-    item_subimage =  db.Column(db.String(100), default='img/item/우산/0.png')
+    item_subimage =  db.Column(db.String(100), default='img/item/우산/.png')
+    item_category = db.Column(db.Text(), nullable=True, server_default='1')
+    count = db.Column(db.Integer, nullable=True, server_default='0')

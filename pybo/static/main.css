@@ -93,8 +93,10 @@ body{
                 margin: 0px;
             } */
             #item{
-                margin-top: 10px;
-                background: white;
+                position: relative;
+                top:150px;
+                width:1330px;
+                margin:auto;
             }
             #item p{
                font-weight: bold;
