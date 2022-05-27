@@ -1,6 +1,6 @@
 {% extends 'base.html' %}
 {% block content %}
-
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
 <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
 <div id = main_box>
                 <!--검색창-->
@@ -19,16 +19,70 @@
 
                 <div id="item">
                     <!--많이 찾은 분리수거 항목-->
-                    <p class="center">많이 찾은 분리수거 항목</p>
-                    <div class="cantainer">
-                        <div class="item_img">
-                            <img src ="static/img/gray.jpg" alt = "분리수거사진" width = "206" height="206">
-                            <img src ="static/img/gray.jpg" alt = "분리수거사진" width = "206" height="206">
-                            <img src ="static/img/gray.jpg" alt = "분리수거사진" width = "206" height="206">
-                            <img src ="static/img/gray.jpg" alt = "분리수거사진" width = "206" height="206">
-                            <img src ="static/img/gray.jpg" alt = "분리수거사진" width = "206" height="206">
-                            <img src ="static/img/gray.jpg" alt = "분리수거사진" width = "206" height="206">
+                    <p>자주 찾은 쓰레기</p>
+                    <br>
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide" style="width:327px;">
+                            <div class="image">
+                                <img src="/img/parasol.png" alt="">
+                            </div>
+                            <div class="similar_back">
+                                <p class="simliar_back-text">파라솔</p>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="image">
+                                <img src="/img/ruler.png" alt="">
+                            </div>
+                            <div class="similar_back">
+                                <p class="simliar_back-text">자</p>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="image">
+                                <img src="/img/umbrella.png" alt="">
+                            </div>
+                            <div class="similar_back">
+                                <p class="simliar_back-text">test</p>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="image">
+                                <img src="/img/umbrella.png" alt="">
+                            </div>
+                            <div class="similar_back">
+                                <p class="simliar_back-text">test</p>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="image">
+                                <img src="/img/umbrella.png" alt="">
+                            </div>
+                            <div class="similar_back">
+                                <p class="simliar_back-text">test</p>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="image">
+                                <img src="/img/umbrella.png" alt="">
+                            </div>
+                            <div class="similar_back">
+                                <p class="simliar_back-text">test</p>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="image">
+                                <img src="/img/umbrella.png" alt="">
+                                <div class="similar_back">
+                                    <p class="simliar_back-text">test</p>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">Slide 8</div>
+                          <div class="swiper-slide">Slide 9</div>
                         </div>
+                        <div class="swiper-pagination"></div>
                     </div>
                 </div>
 
@@ -64,4 +118,31 @@
                 </footer>
                 
 </div>
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 4,
+    centeredSlides: false,
+    spaceBetween: 60,
+    grabCursor: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+</script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/jquery-ui.min.js"></script>
+
+<script>
+jQuery(document).ready(function($) {
+
+  $(".scroll").click(function(event){            
+    event.preventDefault();
+    $('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
+  });
+});
+</script>
+
 {% endblock %}
