@@ -97,5 +97,12 @@ textarea{
     width:100%;
 }
 
-form > input {
+button{
+    width: 90px;
+    height: 47px;
+    background-color: #039145;
+    font-size: 20px;
+    color: #ffffff;
+    float: right;
+    border: none;
 }
