@@ -22,179 +22,164 @@ body{
                 float: right;
            }  */
 
-           #main_box h2{
-                font-family: "Inter";
-               font-size: 38px;
-               font-weight: bold;
-               margin: 0;
-               color:white;
-               text-decoration: none;
-               line-height: 19vw;
-           }
-           #main_box p{
-             font-family: "Inter";
-               font-size: 18px;
-               font-weight: medium;
-               margin-top: 0;
-               color:white;
-               text-decoration: none;
-           }
-           #search{            
-                display:flex;
-           }
-           #search input{
-                position: absolute;
-                top: 15vw;
-                left: 50vw;
-                transform: translate(-50%, -50%);
-                width: 32vw;
-                height: 2.3vw;
-                background: #FFFFFF;
-                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-                border-radius: 40px;
-                padding-left: 14px;
-                margin-top: -6px;
-           }
-           #search button{
-                position:absolute;
-                right: 36vw;
-                top:14vw;
-                border: none;
-                cursor: pointer;
-                width: 0px;
-                height:0px;
-                background: none;
-                margin-top: -8px;
-           }
-           #search button img{
-                margin-top: 10px;
-                width:30px;
-                cursor: pointer;
-           }
+#main_box h2{
+    font-family: "Inter";
+    font-size: 38px;
+    font-weight: bold;
+    margin: 0;
+    color:white;
+    text-decoration: none;
+    line-height: 19vw;
+}
 
-           /* .search{
-               position: absolute; top: 300px; right: 750px;
-               width: 400px;
-               height: 100px;
-               margin: 0px auto;
-            }
-            .search input{
-                width: 400px;
-                border: 1px solid gray;
-                border-radius: 60px;
-                padding: 10px 12px;
-                font-size: 15px;
-            }
-            .search img{
-                position: absolute;
-                width: 20px;
-                top: 7px;
-                right: 0px;
-                margin: 0px;
-            } */
-            #item{
-                position: relative;
-                top:150px;
-                width:1330px;
-                margin:auto;
-            }
-            #item p{
-               font-weight: bold;
-               margin: 0;
-               color:black;
-               text-decoration: none;
-               text-align: center;
-               line-height: 140px;
-               position: relative;
-            }
+#search{            
+    display:flex;
+}
+#search input{
+    position: absolute;
+    top: 15vw;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    width: 32vw;
+    height: 2.3vw;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 40px;
+    padding-left: 14px;
+    margin-top: -6px;
+}
+#search button{
+    position:absolute;
+    right: 36vw;
+    top:14vw;
+    border: none;
+    cursor: pointer;
+    width: 0px;
+    height:0px;
+    background: none;
+    margin-top: -8px;
+}
+#search button img{
+    margin-top: 10px;
+    width:30px;
+    cursor: pointer;
+}
 
-            /* #item img{
-                align-items:center;
-                margin: 0;
-                position: absolute;
-                left: 50%; top: 50%;
-                margin-left: -250px;
-                margin-top: -125px;
-            } */
+/* .search{
+    position: absolute; top: 300px; right: 750px;
+    width: 400px;
+    height: 100px;
+    margin: 0px auto;
+}
+.search input{
+    width: 400px;
+    border: 1px solid gray;
+    border-radius: 60px;
+    padding: 10px 12px;
+    font-size: 15px;
+}
+.search img{
+    position: absolute;
+    width: 20px;
+    top: 7px;
+    right: 0px;
+    margin: 0px;
+} */
+#item{
+    position: relative;
+    top:150px;
+    width:1330px;
+    margin:auto;
+}
+#item p{
+    font-weight: bold;
+    margin: 0;
+    color:black;
+    text-decoration: none;
+    text-align: center;
+    line-height: 140px;
+    position: relative;
+}
 
-            div.container{
-                overflow: hidden;
-            }
+/* #item img{
+    align-items:center;
+    margin: 0;
+    position: absolute;
+    left: 50%; top: 50%;
+    margin-left: -250px;
+    margin-top: -125px;
+} */
 
-            div.item_img{
-                float: left;
-                margin: 0px 3px;
-                padding: 5px;
-                position: absolute;
-                left: 50vw; top: 20vw;
-                margin-left: -650px;
-                margin-top: 155px;
-            }
 
-            #question{
-                height: 400px;
-                margin: 0;
-                color: white;
-                background: #F4F4F4;
-            }
+div.container{
+    overflow: hidden;
+}
 
-            #question p{
-                font-family: "Inter";
-               font-size: 18px;
-               font-weight: bold;
-               margin: 0;
-               color:black;
-               text-decoration: none;
-               text-align: center;
-               line-height: 140px;
-            }
+div.item_img{
+    float: left;
+    margin: 0px 3px;
+    padding: 5px;
+    position: absolute;
+    left: 50vw; top: 20vw;
+    margin-left: -650px;
+    margin-top: 155px;
+}
 
-            div.question_img{
-                float: left;
-                margin: 0px 3px;
-                padding: 5px;
-                position: absolute;
-                left: 50vw; top: 15vw;
-                margin-left: -650px;
-                margin-top: 655px;
-            }   
+#question{
+    position: relative;
+    width:1300px;
+    height:700px;
+    top:130px;
+    margin: auto;
 
-            .center{
-                vertical-align: middle;
-                text-align: center;
-            }
-            #cover{
-                background-image: url('img/메인_하단1.jpg');
-                width: cover;
-                height: 450px;
-                text-align: center;
-            }
-            #cover_text{
-                display:inline-block;
-                color: white;
-                margin-top: 100px;
-                font-weight: bold;
-                position: absolute;
-                left: 39vw; top: 67vw;
-            }
-            #cover_logo img{
-                position: absolute;
-                left: 38vw; top: 76vw;
-            }
-            #cover_text2{
-                display:inline-block;
-                color: white;
-                font-size: 100vw;
-                font-weight: bold;
-                margin-top: 20px;
-                position: absolute;
-                left: 49.5vw; top: 74.9vw;
-            } 
-            footer{
-                background-color: white;
-                text-align: center;
-                font-size: 5px;
-            }
+
+}
+
+#question p{
+    font-family: "Inter";
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+    color:black;
+    text-decoration: none;
+    text-align: center;
+    line-height: 140px;
+}
+
+
+.center{
+    vertical-align: middle;
+    text-align: center;
+}
+#cover{
+    background-image: url('img/메인_하단1.jpg');
+    width: cover;
+    height: 450px;
+    text-align: center;
+}
+#cover_text{
+    display:inline-block;
+    color: white;
+    margin-top: 100px;
+    font-weight: bold;
+    left: 39vw; top: 67vw;
+}
+#cover_logo img{
+    left: 38vw; top: 76vw;
+}
+#cover_text2{
+    display:inline-block;
+    color: white;
+    font-size: 100vw;
+    font-weight: bold;
+    margin-top: 20px;
+    left: 49.5vw; top: 74.9vw;
+} 
+footer{
+    background-color: white;
+    text-align: center;
+    font-size: 5px;
+}
 
             
 .swiper{
@@ -204,14 +189,11 @@ body{
     overflow: visible;
 }
 
-.swiper-slide{
-    width:327px;
-}
 
 
 .image{
-    width: 327px;
-    height: 327px;
+    width: 287.5px;
+    height: 287.5px;
     border-radius: 10px;
     box-shadow: 0 3px 3px rgba(0,0,0,0.2);
 }
@@ -225,3 +207,17 @@ body{
 .swiper-slide p{
     font-size: 20px;
 }
+
+.swiper-slide > p {
+    font-size: 20px;
+}
+
+.swiper-container {
+    width: 100%;
+    max-width: 100%;
+    max-height: 100vh;
+    // CSS Grid/Flexbox bug size workaround
+    // @see https://github.com/kenwheeler/slick/issues/982
+    min-height: 0;
+    min-width: 0;
+  }

@@ -3,15 +3,23 @@
 <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
 <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
 <div id = main_box>
+                {%with messages = get_flashed_messages()%}
+                {%if messages %}
+                <script type="text/javascript">
+                    alert("{{messages[-1]}}");
+                </script>
+                {%endif%}
+                {%endwith%}
                 <!--검색창-->
                 <h2 class="center">무엇을 분리수거하나요?</h2>
                 <p class="center" style="color: white">옷걸이 후라이팬 형광등 인공눈물</p>
                 <div id = "search">
                     <form action="{{ url_for('main.load') }}" method="post">
                         <input type="text" placeholder="쓰레기검색" name="item" id="item"></input>
-                        <button class="button"><img src="static/img/search_button.png"></button>
+                        <button class="button"><img src={{url_for('static', filename='/img/search_button.png')}}></button>
                     </form>
                 </div>
+
                 <!-- <div class="search">
                     <input style="outline: none;" type="text" placeholder="쓰레기 검색">
                     <button class="button"><img src="/img/search_button.png"></button>
@@ -24,10 +32,11 @@
                     <div class="swiper mySwiper">
                         <div class="swiper-wrapper">
                             {% for i in range(6) %}
-                            <div class="swiper-slide" style="width:327px;">
-
+                            <div class="swiper-slide">
                               <div class="image">
-                                  <img src={{url_for('static', filename=freqitem[i].item_image)}} alt="">
+                                  <a href={{url_for('main.load2', itemname = freqitem[i].item_name )}}>
+                                    <img src={{url_for('static', filename=freqitem[i].item_image)}} alt="">
+                                  </a>
                               </div>
                               <p>{{freqitem[i].item_name}}</p>
                             </div>
@@ -39,15 +48,17 @@
 
                <!--자주 묻는 질문-->
                <div id="question">
-                    <p>자주 묻는 질문</p>
+                    <p>최근 등록된 질문</p>
                     <div class="container">
-                        <div class="question_img">
-                            <img src ="static/img/white.jpg" alt = "질문목록" width = "206" height="206">
-                            <img src ="static/img/white.jpg" alt = "질문목록" width = "206" height="206">
-                            <img src ="static/img/white.jpg" alt = "질문목록" width = "206" height="206">
-                            <img src ="static/img/white.jpg" alt = "질문목록" width = "206" height="206">
-                            <img src ="static/img/white.jpg" alt = "질문목록" width = "206" height="206">
-                            <img src ="static/img/white.jpg" alt = "질문목록" width = "206" height="206">
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                {% for i in range(3) %}
+                                <div class="swiper-slide" style=" background-color:rgba(209, 209, 209, 0.2);height: 160px; border-radius: 10px; box-shadow: 0 3px 3px rgba(0,0,0,0.2);">
+                                  <p style="font-size:20px; font-weight: 300; text-align: left; line-height:2; letter-spacing:-1px; margin:20px; margin-top: 30px;">Q. <br> {{freqquestion[i].subject}}</p>
+                                </div>
+                              {% endfor %}
+                            </div>
+                            <div class="swiper-pagination"></div>
                         </div>
                     </div>
                 </div>
@@ -58,7 +69,7 @@
                         <p style="font-size: 40px;">세상을 바꾸는 분리수거,</p>
                     </div>
                     <div id = "cover_logo">
-                        <img class = "center" src="static/img/semoss_logo_white 1.png" width="210" height="53">
+                        <img class = "center" src={{url_for('static', filename='img/semoss_logo_white 1.png')}} width="210" height="53">
                     </div>
                     <div id="cover_text2">
                         <p style="font-size: 38px;">와 함께하세요!</p>
