@@ -8,17 +8,43 @@
     <h1>Q&A</h1>
 </div>
 
-<!--본문-->
-<div id="main">    
-    <!--글제목-->
-    <p class="title">질문게시판</p>
+    <!--본문-->
+ <div id="main">
+    <div style="display: inline-block;  margin: 20px;">
+        <!--글제목-->
+        <p class="title">질문게시판</p>
 
-    <hr>
-    <!--작성 폼-->
-    <div>
-        <table>
-        </table>
+        <hr>
+,
+        <!--작성 폼-->
+        <form method="post">
+            {{ form.csrf_token }}
+           <!--오류 표시 Start-->
+            {% for field, errors in form.errors.items() %}
+            <div class="alert alert-danger" role="alert">
+                <strong>{{ form[field].label }}</strong>: {{ ', '.join(errors) }}
+            </div>
+            {% endfor %}
+          <!--오류 표시 End-->
+
+            <table>
+                <tr>
+                    <td><label for="subject">제목</label></td>
+                    <td><input type="text" name="subject" id="subject"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="content">내용</label></td>
+                    <td><textarea name="content" id="content" rows="20"></textarea></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><button type="submit">제출</button></td>
+                </tr>
+            </table>
+        </form>
     </div>
+  </div>
 </div>
 
 
