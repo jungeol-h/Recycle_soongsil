@@ -38,6 +38,20 @@ a {
 
 }
 
+#banner{
+    position: relative;
+    width: 100vw;
+}
+
+#banner>h1{
+    font-size: 40px;
+    color: #ffffff;
+    float: left;
+    position: absolute;
+    top: 48%;
+    left:15.5%;
+}
+
 .main{
     width: 69.635vw;
     margin: 0 auto;

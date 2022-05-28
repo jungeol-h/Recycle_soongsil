@@ -39,14 +39,16 @@ ul{
     position: relative; 
     width: 100vw;   
 }
+
 #banner>h1{
-    font-size: 45px;
+    font-size: 40px;
     color: #ffffff;
     float: left;
     position: absolute;
-    top: 25%;
+    top: 48%;
     left:15.5%;
 }
+
 #main{
     width: 69.79vw;
     position: absolute;
