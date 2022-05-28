@@ -1,8 +1,6 @@
 {% extends 'base.html' %}
 {% block content %}
-<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
 <link rel="stylesheet" href="{{ url_for('static', filename='result_page.css') }}">
-
     <div id="main_box">
     <div class="content_box">
         <div id="result_box">
@@ -35,6 +33,8 @@
             </div>
             <div class="swiper-pagination"></div>
         </div>
+
+        
         <p id = "sequence">유사 쓰레기</p>
         <div class="swiper mySwiper">
             <div class="swiper-wrapper">
