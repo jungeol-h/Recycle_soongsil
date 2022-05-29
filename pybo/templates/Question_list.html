@@ -29,7 +29,14 @@
     </div>    
 
     <!--질문 리스트-->
-    <table class="table table-hover">
+    <table class="table table-hover" style="border-top: 1.5px solid #555555; border-bottom: 2px solid #555555">
+        <thead>
+        <tr style="background-color: #F4F4F4">
+            <th>번호</th>
+            <th>제목</th>
+            <th>작성일시</th>
+        </tr>
+        </thead>
         <tbody>
             {% if question_list %}
             {% for question in question_list %}
