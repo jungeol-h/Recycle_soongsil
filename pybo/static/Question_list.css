@@ -8,10 +8,6 @@ body{
     background-color: #000000;
     position: relative;
 }
-#logotext{
-    margin-left: 15.1vw;
-    position: absolute;
-}
 #logo{
    margin-top: 13px;
 }
@@ -81,10 +77,11 @@ button{
 
 .btn{
   width: 90px;
-    height: 47px;
-    background-color: #039145;
-    font-size: 20px;
-    color: #ffffff;
-    float: right;
-    border: none;}
+  height: 47px;
+  background-color: #039145;
+  font-size: 20px;
+  color: #ffffff;
+  float: right;
+  border: none;
+  }
 

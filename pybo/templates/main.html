@@ -14,7 +14,7 @@
                 <p class="center" style="font-weight: 300; color:white; letter-spacing: 2px;">세상의 모든 쓰레기, 세모쓰에 물어보세요!</p>
                 <div id = "search">
                     <form action="{{ url_for('main.load') }}" method="post">
-                        <input type="text" placeholder="쓰레기검색" name="item" id="item"></input>
+                        <input type="text" placeholder="쓰레기검색" name="item" id="item">
                         <button class="button"><img src={{url_for('static', filename='/img/search_button.png')}}></button>
                     </form>
                 </div>
