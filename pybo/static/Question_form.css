@@ -8,10 +8,6 @@ body{
     background-color: #000000;
     position: relative;
 }
-#logotext{
-    margin-left: 15.1vw;
-    position: absolute;
-}
 #logo{
    margin-top: 13px;
 }
@@ -49,13 +45,14 @@ a{
     width: 100vw;   
 }
 #banner>h1{
-    font-size: 45px;
+    font-size: 40px;
     color: #ffffff;
     float: left;
     position: absolute;
-    top: 25%;
+    top: 48%;
     left:15.5%;
 }
+
 #main{
     width: 69.79vw;
     position: absolute;
@@ -105,4 +102,5 @@ button{
     color: #ffffff;
     float: right;
     border: none;
+    border-radius: 4px;
 }

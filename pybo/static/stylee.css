@@ -38,6 +38,20 @@ a {
 
 }
 
+#banner{
+    position: relative;
+    width: 100vw;
+}
+
+#banner>h1{
+    font-size: 40px;
+    color: #ffffff;
+    float: left;
+    position: absolute;
+    top: 48%;
+    left:15.5%;
+}
+
 .main{
     width: 69.635vw;
     margin: 0 auto;
@@ -81,18 +95,16 @@ a {
     background-color: #F4F4F4;
     border-top: 2px solid black;
     border-bottom: 2px solid black;
-
-
 }
 
 .teller {
-    font-size: 14px;
+    font-size: 15px;
     display: flex;
+    padding-top: 30px;
 }
 
 .teller li {
     padding: 0 20px;
-    
 }
 
 ul {
@@ -100,7 +112,7 @@ ul {
 }
 
 .story {
-    padding: 10px 50px;
+    padding: 30px 50px;
 }
 
 .story-s {
@@ -118,12 +130,16 @@ ul {
     font-size: 14px;
     padding-left: 30px;
     padding: 10px 40px;
-
+    padding-top: 30px;
 }
 
 .comment-box {
     border-top: 1px solid black;
     border-bottom: 1px solid black;
+}
+
+.comment-text {
+    margin-bottom: 12px;
 }
 
 hr{
@@ -140,7 +156,7 @@ ul hr{
 
 .c-people {
     font-size: 16px;
-
+    margin-top: 30px;
 }
 
 
@@ -150,7 +166,6 @@ ul hr{
 
 .c-content {
     font-size: 15px;
-
     padding-bottom: 30px;
 }
 
@@ -174,11 +189,10 @@ ul hr{
 .c-all {
     width: 62.5vw;
     height: 200px;
-
 }
 
 .c-b {
-    width: 62.5vw;
+    width: 65vw;
     height: 100px;
     background-color: white;
     border: none;
@@ -187,14 +201,12 @@ ul hr{
 .c-write{
     width: 65vw;
     margin: 0 auto;
-    margin-top: 25px;
-    padding-bottom: 60px;
+    padding-bottom: 70px;
 }
 
 span{
     display: inline-block;
 }
-
 
 .click {
     float: right;
@@ -203,12 +215,12 @@ span{
 
 .c-click {
     background-color: #039145;
-    width: 60px;
-    height: 30px;
+    width: 65px;
+    height: 40px;
+    font-size: 20px;
     color: #ffffff;
     border: none;
     float: right;
     margin-top: 10px;
+    border-radius: 4px;
 }
-
-

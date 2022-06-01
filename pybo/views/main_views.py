@@ -45,7 +45,6 @@ def request_text(item):
     recycleitem= RecycleItem.query.filter_by(item_name = item).first()
     return recycleitem.itemname
 
-
 """
 old version
 def load():
