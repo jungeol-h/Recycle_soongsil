@@ -22,7 +22,7 @@
             <div class="swiper-wrapper">
               {% for i in range(item.size) %}
                 <div class="swiper-slide" style="width:327px;">
-                  <p>{{sequence[i]}}</p>
+                  <p style="width: 327px; height:120px;">{{sequence[i]}}</p>
                   <div class="image">
                       <img src={{url_for('static', filename=subimage[i])}} onerror="this.onerror=null; this.src={{url_for('static', filename='img/item/number/1.png')}};">
                   </div>
@@ -34,7 +34,7 @@
 
         
         <p id = "sequence">유사 쓰레기</p>
-        <div class="swiper mySwiper">
+        <div class="swiper mySwiper2">
             <div class="swiper-wrapper">
               {% for t in range(si_rec_count) %}
                 {% if si_rec[t].item_name != item.item_name %}
@@ -62,6 +62,17 @@
       <!-- Initialize Swiper -->
       <script>
         var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 3,
+          centeredSlides: true,
+          spaceBetween: 50,
+          grabCursor: true,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+        });
+
+        var swiper = new Swiper(".mySwiper2", {
           slidesPerView: 3,
           centeredSlides: false,
           spaceBetween: 50,

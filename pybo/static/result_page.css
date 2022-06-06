@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
 
 body{
     margin: 0px;
@@ -79,7 +79,6 @@ body{
 .swiper{
     width:1330px;
     height:500px;
-    margin: 0 500px 0px 0px;
     overflow: visible;
 }
 
@@ -128,8 +127,6 @@ body{
     width: 100%;
     max-width: 100%;
     max-height: 100vh;
-    // CSS Grid/Flexbox bug size workaround
-    // @see https://github.com/kenwheeler/slick/issues/982
     min-height: 0;
     min-width: 0;
   }

@@ -15,7 +15,7 @@
                 <p class="center" style="font-weight: 300; color:white; letter-spacing: 2px;">세상의 모든 쓰레기, 세모쓰에 물어보세요!</p>
                 <div id = "search">
                     <form action="{{ url_for('main.load') }}" method="post">
-                        <input type="text" autocomplete="on" placeholder="쓰레기검색" name="item" id="item"></input>
+                        <input type="text" autocomplete="off" placeholder="쓰레기검색" name="item" id="item"></input>
                         <button class="button"><img src={{url_for('static', filename='/img/search_button.png')}}></button>
                     </form>
                 </div>
@@ -45,18 +45,16 @@
                <!--자주 묻는 질문-->
                <div id="question">
                     <p style="font-size:32px;">최근 등록된 질문</p>
-                    <div class="container">
                         <div class="swiper mySwiper">
                             <div class="swiper-wrapper">
-                                {% for i in range(3) %}
-                                <div class="swiper-slide" style=" background-color:rgba(209, 209, 209, 0.2);height: 160px; border-radius: 10px; box-shadow: 0 3px 3px rgba(0,0,0,0.2);">
+                                {% for i in range(4) %}
+                                <div class="swiper-slide" style=" background-color:rgba(209, 209, 209, 0.2);height: 180px; border-radius: 10px; box-shadow: 0 3px 3px rgba(0,0,0,0.2);">
                                   <p style="font-size:20px; font-weight: 300; text-align: left; line-height:2; letter-spacing:-1px; margin:20px; margin-top: 30px;">Q. <br> <a href="{{ url_for('question.detail', question_id=freqquestion[i].id) }}" style="text-decoration:none; color:black;">{{freqquestion[i].subject}}</a></p>
                                 </div>
                               {% endfor %}
                             </div>
                             <div class="swiper-pagination"></div>
                         </div>
-                    </div>
                 </div>
 
                 <!--사진-->
@@ -101,6 +99,7 @@ jQuery(document).ready(function($) {
     $('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
   });
 });
+
 </script>
 
 
