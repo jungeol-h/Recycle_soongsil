@@ -21,7 +21,7 @@
             minLength: 1,// 최소 글자수
             autoFocus: true, //첫번째 항목 자동 포커스 기본값 false
             classes: {    //잘 모르겠음
-                "ui-autocomplete": "highlight"
+                "ui-autocomplegte": "highlight"
             },
             delay: 100,    //검색창에 글자 써지고 나서 autocomplete 창 뜰 때 까지 딜레이 시간(ms)
             //disabled: true, //자동완성 기능 끄기
@@ -86,7 +86,7 @@
                             <div class="swiper-wrapper">
                                 {% for i in range(3) %}
                                 <div class="swiper-slide" style=" background-color:rgba(209, 209, 209, 0.2);height: 160px; border-radius: 10px; box-shadow: 0 3px 3px rgba(0,0,0,0.2);">
-                                  <p style="font-size:20px; font-weight: 300; text-align: left; line-height:2; letter-spacing:-1px; margin:20px; margin-top: 30px;">Q. <br> {{freqquestion[i].subject}}</p>
+                                  <p style="font-size:20px; font-weight: 300; text-align: left; line-height:2; letter-spacing:-1px; margin:20px; margin-top: 30px;">Q. <br> <a href="{{ url_for('question.detail', question_id=freqquestion[i].id) }}" style="text-decoration:none; color:black;">{{freqquestion[i].subject}}</a></p>
                                 </div>
                               {% endfor %}
                             </div>
