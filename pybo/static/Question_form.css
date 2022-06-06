@@ -22,7 +22,6 @@ ul{
 }
 li{
     float: left;
-    margin-top: 18px;
 }
 #search1{
     width: 11.25vw;
@@ -87,14 +86,14 @@ input{
     height: 40px;
     border: solid 1px #828282;
     background-color: #ffffff;
-    margin-bottom: 25px;
+
 }
 
 textarea{
     width:100%;
 }
 
-button{
+#btn{
     width: 90px;
     height: 47px;
     background-color: #039145;

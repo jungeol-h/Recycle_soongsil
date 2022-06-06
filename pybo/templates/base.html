@@ -23,8 +23,11 @@ href="https://unpkg.com/swiper/swiper-bundle.min.css"
               <li><a id = "qna" href ="#">ABOUT</a></li>
               <li><a id = "qna" href ="{{url_for('question._list')}}">QNA</a></li>
            <li> <div id ="search_bar">
-              <input id="search_bar_mini" style="outline:none;" type="text" placeholder="  검색어 입력">
-              <button class="search_button"> <img src={{url_for('static',filename='img/search_button.png')}}></button>
+            <form action="{{ url_for('main.load') }}" method="post">
+                <input id="search_bar_mini" name="item" style="outline:none;" type="text" placeholder="  검색어 입력"></input>
+                <button id="search_button" > <img src={{url_for('static',filename='img/search_button.png')}} style ="    width:30px;
+                    height: 30px;"></button>
+            </form>
             </div>
            </li>
           </ul>

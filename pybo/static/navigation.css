@@ -50,9 +50,7 @@
 }
 
 
-.header_box_right img {
-    width:218px;
-}
+
 
 .header_box_right p {
     font-size: 15px;
@@ -76,20 +74,18 @@
     box-sizing: content-box;
 }
 
-.search_button {
+#search_button {
     position:relative;
     left:-50px;
     border: none;
     cursor: pointer;
-    width: 0px;
-    height:0px;
     background: none;
     margin-top: -8px;
 }
 
-.search_button img {
-    margin-top: 17px;
+.search_button > img {
     width:30px;
+    height: 30px;
     cursor: pointer;
 
 }
