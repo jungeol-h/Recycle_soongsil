@@ -2,18 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="781a232b-190d-45d9-8074-fe6218da3b0b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/pybo/static/info.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pybo/templates/info.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pybo.db" beforeDir="false" afterPath="$PROJECT_DIR$/pybo.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pybo/static/Question_form.css" beforeDir="false" afterPath="$PROJECT_DIR$/pybo/static/Question_form.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pybo/static/Question_list.css" beforeDir="false" afterPath="$PROJECT_DIR$/pybo/static/Question_list.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pybo/static/img/댓글.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pybo/static/stylee.css" beforeDir="false" afterPath="$PROJECT_DIR$/pybo/static/stylee.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pybo/templates/Question_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/pybo/templates/Question_form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pybo/templates/Question_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/pybo/templates/Question_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pybo/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/pybo/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pybo/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/pybo/templates/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pybo/templates/base_main.html" beforeDir="false" afterPath="$PROJECT_DIR$/pybo/templates/base_main.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pybo/templates/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/pybo/templates/main.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pybo/templates/recycle.html" beforeDir="false" afterPath="$PROJECT_DIR$/pybo/templates/recycle.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pybo/views/main_views.py" beforeDir="false" afterPath="$PROJECT_DIR$/pybo/views/main_views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pybo/views/question_views.py" beforeDir="false" afterPath="$PROJECT_DIR$/pybo/views/question_views.py" afterDir="false" />
     </list>
@@ -21,6 +17,14 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="HTML File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -33,14 +37,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/김지은/projects/myproject&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/김지은/Desktop/Question/Recycle_soongsil/pybo/templates"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\김지은\Desktop\Question\Recycle_soongsil\pybo\templates" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\508\Documents\Recycle_soongsil\pybo\static" />
       <recent name="C:\Users\508\Documents\Recycle_soongsil\pybo\templates" />
@@ -56,5 +64,16 @@
       <updated>1652947378134</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

@@ -15,6 +15,7 @@ def _list():
     question_list = question_list.paginate(page, per_page=10)
     return render_template('Question_list.html', question_list=question_list)
 
+
 @bp.route('/detail/<int:question_id>/')
 def detail(question_id):
      question = Question.query.get_or_404(question_id)

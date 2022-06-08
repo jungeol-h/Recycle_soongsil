@@ -15,6 +15,10 @@ def index():
     question_list = Question.query.order_by(Question.create_date.desc())
     return render_template('main.html',freqitem = item, freqquestion = question_list)
 
+@bp.route('/info')
+def info():
+    return render_template('info.html')
+
 @bp.route('/load/', methods=["POST"])
 def load():
     itemname = request.form['item']
@@ -44,6 +48,7 @@ def request_img(item):
 def request_text(item):
     recycleitem= RecycleItem.query.filter_by(item_name = item).first()
     return recycleitem.itemname
+
 
 """
 old version
